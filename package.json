@@ -1,0 +1,46 @@
+{
+  "name": "rawcloud-cli",
+  "version": "1.2.1",
+  "description": "A lightweight RawCloud project scaffolding CLI for creating projects from template repositories.",
+  "main": "cli.js",
+  "bin": {
+    "rawcloud-cli": "cli.js"
+  },
+  "scripts": {
+    "test": "node -c cli.js && node -c lib/create.js",
+    "prepublishOnly": "npm test",
+    "pack:check": "npm pack --dry-run"
+  },
+  "keywords": [
+    "rawcloud",
+    "cli",
+    "scaffold",
+    "template",
+    "generator"
+  ],
+  "author": "rawcloud",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rawcloud/rawcloud-cli"
+  },
+  "homepage": "https://github.com/Rawcloud/rawcloud-cli",
+  "bugs": {
+    "url": "https://github.com/Rawcloud/rawcloud-cli/issues"
+  },
+  "files": [
+    "cli.js",
+    "lib",
+    "README.md"
+  ],
+  "dependencies": {
+    "axios": "^1.7.9",
+    "chalk": "^4.1.2",
+    "commander": "^8.3.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^8.2.0",
+    "path": "^0.12.7",
+    "simple-git": "^2.48.0",
+    "util": "^0.12.4"
+  }
+}
