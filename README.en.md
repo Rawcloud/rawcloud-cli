@@ -2,7 +2,7 @@
 
 > Language Switch / 语言切换
 >
-> [English](README.en.md) · [中文](README.zh.md)
+> [English](README.en.md) · [中文](README.md)
 
 A lightweight project scaffolding CLI for creating projects from template repositories.
 
