@@ -54,7 +54,6 @@ rawcloud-cli/
 ├── package.json
 ├── README.md
 ├── README.en.md
-├── README.zh.md
 └── lib/
     ├── create.js
     └── http.js
@@ -77,4 +76,4 @@ A: Run `node cli.js create my-app` in the project root.
 ## Language Switch
 
 - [English](README.en.md)
-- [中文](README.zh.md)
+- [中文](README.md)

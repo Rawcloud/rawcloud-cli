@@ -56,7 +56,6 @@ rawcloud-cli/
 ├── package.json
 ├── README.md
 ├── README.en.md
-├── README.zh.md
 └── lib/
     ├── create.js
     └── http.js
