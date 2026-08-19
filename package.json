@@ -1,6 +1,6 @@
 {
   "name": "rawcloud-cli",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A lightweight RawCloud project scaffolding CLI for creating projects from template repositories.",
   "main": "cli.js",
   "bin": {
