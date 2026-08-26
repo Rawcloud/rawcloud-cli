@@ -36,6 +36,12 @@ npm link
 rawcloud-cli create <appname>
 ```
 
+也可以直接指定模板仓库地址，跳过模板列表选择：
+
+```bash
+rawcloud-cli create my-app --repo https://github.com/example/template.git
+```
+
 ### 示例
 
 ```bash
@@ -70,6 +76,10 @@ A：CLI 会从 RawCloud 的 Gitee 模板仓库中拉取模板列表，供你在�
 **Q：如果模板下载失败怎么办？**
 
 A：CLI 会询问是否重新下载。若目标目录已存在，可以使用 `--force` 选项覆盖。
+
+**Q：可以使用自己的模板仓库吗？**
+
+A：可以，使用 `--repo <url>` 传入 Git 仓库地址。支持 HTTPS、SSH、Git 协议以及 `git@host:path` 格式；指定后会跳过默认模板列表。
 
 **Q：如何本地测试？**
 

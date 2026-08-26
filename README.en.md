@@ -34,6 +34,12 @@ npm link
 rawcloud-cli create <appname>
 ```
 
+You can also provide a template repository directly to skip template selection:
+
+```bash
+rawcloud-cli create my-app --repo https://github.com/example/template.git
+```
+
 ### Example
 
 ```bash
@@ -68,6 +74,10 @@ A: The CLI loads template repositories from the RawCloud Gitee organization and 
 **Q: What should I do if the download fails?**
 
 A: The CLI will ask whether you want to retry. You can also use the `--force` option when the target directory already exists.
+
+**Q: Can I use my own template repository?**
+
+A: Yes. Pass a Git repository URL with `--repo <url>`. HTTPS, SSH, Git, and `git@host:path` formats are supported. This skips the default template list.
 
 **Q: How do I test it locally?**
 
