@@ -1,0 +1,26 @@
+name: Publish to npm
+
+on:
+  push:
+    tags:
+      - 'v*'          # 打 v1.0.0 这样的 tag 时自动触发
+
+permissions:
+  contents: read
+  id-token: write     # 必须：OIDC 令牌权限
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+
+      - run: npm ci
+
+      - run: npm publish --access public
+        # ⚠️ 注意：这里不要写 env，不要设 NODE_AUTH_TOKEN
