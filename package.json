@@ -20,6 +20,9 @@
   ],
   "author": "rawcloud",
   "license": "MIT",
+  "engines": {
+    "node": ">=14.14"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Rawcloud/rawcloud-cli"
@@ -38,10 +41,7 @@
     "axios": "^1.7.9",
     "chalk": "^4.1.2",
     "commander": "^8.3.0",
-    "download-git-repo": "^3.0.2",
     "inquirer": "^8.2.0",
-    "path": "^0.12.7",
-    "simple-git": "^2.48.0",
-    "util": "^0.12.4"
+    "simple-git": "^2.48.0"
   }
 }
